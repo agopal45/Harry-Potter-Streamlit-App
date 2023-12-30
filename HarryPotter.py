@@ -8,7 +8,7 @@ data = r.json()
 #Header
 def intro():
     st.title("Welcome to Hogwarts! 🏰")
-    st.image("images/hogwarts.jpeg", width = 500)
+    st.image("HPImages/hogwarts.jpeg", width = 500)
     st.subheader("✨Fill out these questions to select your wand, get sorted into a house, and discover your patronus:")
 intro()
 
@@ -44,7 +44,7 @@ def form():
                 st.image(image)
     
     with tab2:
-        st.image("images/sorthat.jpeg")
+        st.image("HPImages/sorthat.jpeg")
         st.subheader("🧙 \"Now it is time to get sorted into a house!\" ")
         house_choice = st.radio("Which of these activities appeals to you most?", ["a) Baking banana bread 🍌🍞",
                                                                     "b) Pranking civilians at Walmart 🃏",
@@ -65,7 +65,7 @@ def form():
                 house = "ravenclaw"
                 houseEmoji = "🐦"
             houseCrest = house + ".webp"
-            st.image("images/"+houseCrest)
+            st.image("HPImages/"+houseCrest)
             st.header("Amazing job, " + name+ "! You are now the latest addition to house " + house.upper() +"! " + houseEmoji)
             link = "https://www.wizardingworld.com/fact-file/magical-miscellany/" + house
             st.link_button("Learn more about your house here!" , link) #NEW
